@@ -1,7 +1,6 @@
 import streamlit as st
 from Crypto.Cipher import ARC4
 from Crypto.Random import get_random_bytes
-from requirements import pycryptodome
 
 def rc4_encrypt(plaintext, key):
     cipher = ARC4.new(key)
